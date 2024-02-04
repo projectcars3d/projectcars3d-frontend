@@ -1,0 +1,23 @@
+#searchByCar{
+    display: block;
+}
+
+#searchByPN{
+    display: none;
+}
+
+#searchByFreeText{
+    display: none;
+}
+
+#partNumber, #freeText{
+    margin: 0px 10px 0px 10px;
+}
+
+.searchInputs{
+    align-items: center;
+}
+
+.searchInputs > select{
+    width: 50px;
+}

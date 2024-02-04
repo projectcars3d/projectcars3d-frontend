@@ -1,0 +1,174 @@
+#signInContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.signInInputsContainer{
+    padding: 20px;
+    height: 100%;
+}
+
+label{
+    margin-left: 15px;
+}
+
+select, input :not(.exclude-style){
+    width: 260px;
+    margin: 0px;
+    color: black;
+    cursor: pointer;
+}
+
+.userProfilePic{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.27);
+  background-position: center;
+  background-size: contain;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+#carsInputsContainer{
+  display: block;
+}
+
+.myCarsInput{
+    position: relative;
+}
+
+.myCarsInput > input::placeholder{
+    color: black;
+}
+
+.myCarsInput > .carIcon{
+    position: absolute;
+    left: 10px;
+    top: 32px;
+    cursor: pointer;
+}
+
+.myCarsInput > div {
+    width: 260px;
+    padding-left: 65px;
+    padding-top: 3px;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    height: 36px;
+    cursor: pointer;
+}
+
+  #customersCars{
+    max-height: 266px;
+    max-width: 285px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+  ::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FFCD51;
+    border-radius: 1ex;
+    border: 1px solid black;
+}
+
+.customersCarsDiv{
+  position: relative;
+}
+
+.nonInteractionInputs{
+  pointer-events: none;
+  padding-left: 15px;
+  padding-right: 40px;
+  margin-top: 15px;
+  text-overflow: ellipsis;
+}
+
+.nonInteractionInputs::placeholder{
+  color: black;
+}
+
+.trashIcon{
+  position: absolute;
+  bottom: 8px;
+  left: 220px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.trashIcon:hover{
+  transform: scale(0.85);
+}
+
+#createAnAccountCtn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#createAccountBtn{
+  background-color: #A7D8FF;
+}
+
+#createAccountBtn:hover{
+  background-color: #FFCD51;
+}
+
+/* #addCarModalBgc{
+  height: 100vh;
+  width: 100vw;
+  background-color: #D9D9D980;
+  position: absolute;
+  top: 0px;
+  z-index: 999999999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+} */
+
+#addCarModalBgc{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#addCarModal{
+  width: 370px;
+  height: 370px;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#addCarModal *{
+  margin-bottom: 20px;
+}
+
+#xBtnModal{
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+#xBtnModal:hover{
+  transform: scale(0.85);
+}

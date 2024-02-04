@@ -1,0 +1,14 @@
+#selectedPicsContainer{
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+
+.selectedPics{
+    height: 41px;
+    width: 41px;
+    background-position: center;
+    background-size: cover;
+    margin: 0px 1px 0px 1px;
+    border-radius: 3px;
+}

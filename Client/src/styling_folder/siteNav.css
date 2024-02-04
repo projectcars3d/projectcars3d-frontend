@@ -1,0 +1,223 @@
+nav{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logoContainer {
+    height: 75%;
+    margin-left: 7px;
+}
+
+#logo{
+    height: 90%;
+}
+
+#hamburger{
+    display: none;
+}
+
+.navButtonsContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    flex-direction: row;
+}
+
+.navButtons{
+    margin: 0px;
+    padding: 0px 20px 0px 20px;
+    font-size: 1.25em;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-right: 2px solid black;
+    border-radius: 0px;
+}
+
+#firstNavBtn{
+    padding-left: 7px;
+}
+
+#userButtonContainer{
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    top: 86px;
+    height: 54px;
+    width: 200px;
+    transition: 0.5s ease-out;
+
+}
+
+#userButtonContainer:hover{
+    height: 500px;
+    border-radius: 0px 0px 0px 10px;
+    /* box-shadow: 0 5px 5px -5px rgba(0,0,0,0.5); */
+}
+
+#logAndSignInCnt{
+    position: absolute;
+    right: 0px;
+    top: 100px;
+}
+
+.signButton{
+    background-color: transparent;
+    padding: 0px 9px 0px 9px;
+    font-size: 1.25em;
+    border: 0px;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    margin: 0px;
+    margin-right: 7px;
+}
+
+#signInDivaider{
+    border-right: 2px solid black;
+    padding-right: 9px;
+    margin-right: 0px;
+}
+
+.signButton:hover{
+    background-color: #A7D8FF;
+}
+
+#userProfilePic{
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.27);
+    background-position: center;
+    background-size: contain;
+    object-fit: cover;
+}
+
+#userInfo{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+}
+
+#userInfo * {
+    margin: 5px;
+    cursor: pointer;
+}
+
+#userName{
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+#userButtonContainer:hover > #userInfo :nth-child(1){
+    transform: rotate(180deg);
+}
+
+#userDropDown{
+    background-color: #FFCD51;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.userDropDownBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid black;
+    height: 60px;
+    width: 80%;
+}
+
+#userDropDownArrow{
+    transition: 0.5s ease-out;
+}
+
+.userButtonContainer_phone{
+    display: none;
+}
+
+#userHamburger{
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    /* For tablets and phones: */
+    
+    .logoContainer {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(255,206,80,0.6) 50%, rgba(0,0,0,0) 100%);
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+    }
+
+    #logo{
+        position: absolute;
+        left: 35%;
+        top: 9%;
+        height: 80%;
+    }
+
+
+    #userInfo>*{
+        display: none;
+    }
+
+    #userButtonContainer{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #userButtonContainer:hover{
+        /* height: 610px; */
+        height: 680px;
+        border-radius: 0px 0px 10px 0px;
+    }
+
+    #hamburger{
+        display: block;
+        position: relative;
+        top: 15px;
+        left: 15px;
+        margin-bottom: 85px;
+    }
+
+    #userDropDown{
+        position: relative;
+        top: 15px;
+    }
+
+    .navButtonsContainer{
+        display: none;
+    }
+
+    .userButtonContainer_phone{
+        display: block;
+    }
+
+    #logAndSignInCnt{
+        display: none;
+    }
+
+    #userHamburger{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    #userName{
+        max-width: 80%;
+        margin-bottom: 15px;
+        margin-top: 5px;
+    }
+}

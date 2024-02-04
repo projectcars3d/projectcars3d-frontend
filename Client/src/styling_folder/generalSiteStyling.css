@@ -1,0 +1,374 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'MPLUS1p-Bold';
+}
+
+@font-face {
+    src: url(./fonts/MPLUS1p-Bold.ttf);
+    font-family: 'MPLUS1p-Bold';
+ }
+
+a{
+    color: #000000;
+    text-decoration: none;
+}
+
+ button{
+    border-radius: 10px;
+    margin: 5px;
+ }
+
+
+ nav{
+    position: relative;
+    z-index: 1000;
+    background-color: #FFCD51;    
+    width: 100%;
+    height: 140px;
+    padding: 10px;
+    background-image: url(../styling_folder/images/navImage.png);
+    background-repeat: no-repeat;
+    background-position: 80%;
+}
+
+aside{
+    height: 100%;
+    width: 180px;
+    margin: 0px 15px 15px 30px;
+}
+
+.asideBtns{
+    margin-bottom: 5px !important;
+    transition: 0.2s ease-in-out;
+}
+
+.asideBtns:hover{
+    transform: translateX(15px);
+}
+
+.searchBar{
+    padding: 10px;
+    height: 105px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    border-bottom: double;
+}
+
+    
+.searchType{
+    grid-area: 1 / 1 / 2 / 2;
+    }
+
+
+.searchInputs{
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.clickableText{
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.clickableText:hover{
+    color: #FFCD51;
+}
+
+.clickableTextBlue{
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.clickableTextBlue:hover{
+    color: #A7D8FF;
+}
+
+
+.allButtons{
+    min-width: 150px;
+    height: 44px; 
+    margin: 0;
+    padding: 0px 9px 0px 9px;
+    font-size: 1.25em;
+    border: 2px black solid;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #FFCD51;
+    transition: 0.2s ease-in-out;
+}
+
+.allButtons:hover{
+    background-color: #A7D8FF;
+}
+
+select{
+    margin-top: 3px;
+    padding-left: 5px;
+    border: 2px black solid;
+    border-radius: 30px;
+    height: 40px;
+    min-width: 25%;
+}
+
+select:disabled{
+    background-color: #F5F5F5;
+}
+
+input :not(.exclude-style){
+    margin: 3px 10px 0px 10px;
+    border: 2px black solid;
+    border-radius: 30px;
+    height: 40px;
+    min-width: 25%;
+    padding-left: 5px;
+}
+
+input:disabled{
+    background-color: #F5F5F5;
+    color: grey;
+}
+
+#mainContainer{
+    display: flex;
+    width: 100%;
+}
+
+main{
+    text-align: center;
+    width: 100%;
+}
+
+.pageName{
+    text-align: center;
+}
+
+h1{
+    font-size: 1.5em;
+    margin: 10px 0px 10px 0px;
+}
+
+.cardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.productCard{
+    margin: 0px 10px 15px 10px;
+    padding-bottom: 10px;
+    /* background-color: #A7D8FF; */
+    background-color: #d6edff;
+    width: 230px;
+    height: 285px;
+    border-radius: 15px;
+    transition: ease-in-out 0.15s;
+}
+
+.productCard:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.productCardTitle{
+    background-color: black;
+    height: 10%;
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+}
+
+
+#productCardImgPCnt{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardImgCnt{
+    height: 155px;
+    margin-bottom: 5px;
+}
+
+.productCardImg{
+    max-width: 100%;
+    max-height: 155px;
+}
+
+
+.cardDawnloadDiv, .cardStarDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 5px;
+}
+
+.cardDawnloadImg{
+    width: 26px;
+    height: 26px;
+}
+
+footer{
+    background-color: #A7D8FF;
+    width: 100%;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea{
+    width: 770px;
+    height: 100px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 5px;
+    resize: none;
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    /* For tablets and phones: */
+
+    /* Nav */
+    nav{
+        background-position: 50%;
+        display: block;
+    }
+
+    #userButtonContainer{
+        position: absolute;
+        left: 0px;
+    }
+
+    .navButtonsContainer{
+        display: none;
+    }
+
+
+    /* Search bar */
+    .searchBar{
+        display: block;
+        height: 100%;
+    }
+
+    .searchType{
+        height: 20px;
+        margin-bottom: 10px;
+    }
+
+
+/* Search by car */
+
+    .searchInputs{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .searchInputs select{
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .searchInputs select~.allButtons{
+        width: 50%;
+        margin-top: 10px;
+    }
+
+
+/* Search by part number */
+
+    #searchByPN{
+        display: block;
+    }
+
+    #searchByPN *{
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    #searchByPN > button{
+        width: 50%;
+        margin-top: 10px;
+    }
+
+
+
+/* Search by freetext */
+
+    #searchByFreeText{
+        display: block;
+    }
+
+    #searchByFreeText *{
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    #searchByFreeText > button{
+        width: 50%;
+        margin-top: 10px;
+    }
+
+    /* Search by car */
+    #searchByCar *{
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    #mainContainer{
+        display: block;
+    }
+
+    aside{
+        overflow: scroll;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        display: flex;
+        padding: 0px 0px 0px 15px;
+    }
+
+    .asideBtns{
+        display: block;
+        margin-right: 15px;
+        margin-top: 5px;
+    }
+
+    .asideBtns:hover{
+        transform: translatey(-5px);
+    }
+
+    .categoryEnds{
+        background-color: blue;
+    }
+
+    #categoryEndLeft{
+        position: absolute;
+        left: 0;
+        height: 55px;
+        width: 70px;
+        background: linear-gradient(90deg, rgba(255,255,255,0.75) 50%, rgba(255,255,255,0) 100%);
+        display: none;
+    }
+
+    #categoryEndRight{
+        position: absolute;
+        right: 0;
+        height: 55px;
+        width: 70px;
+        background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.75) 50%);
+    }
+
+    main{
+        background-color: #fff;
+    }
+  }

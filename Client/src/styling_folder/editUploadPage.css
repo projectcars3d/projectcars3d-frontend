@@ -1,0 +1,8 @@
+.exitButtons{
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+.exitButtons:hover{
+    background-color: rgb(255, 85, 0);
+}

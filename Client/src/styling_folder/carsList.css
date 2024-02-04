@@ -1,0 +1,34 @@
+table{
+    max-width: 100vw;
+}
+
+thead{
+    background-color: #FFCD51;
+}
+
+th{
+    padding: 0px 10px 0px 10px;
+    width: 100vw;
+}
+
+tr:hover{
+    background-color: #FFCD51;
+}
+
+.even-row{
+    background-color: #D9D9D980;
+}
+
+.odd-row{
+    background-color: white;
+}
+
+td{
+    padding: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+    td{
+        width: 100vw;
+    }
+}

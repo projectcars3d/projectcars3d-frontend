@@ -1,0 +1,216 @@
+.productDescriptionComponent{
+    display: flex;
+    padding: 20px;
+    max-width: 98vw;
+}
+
+.productImgsContainer{
+    min-height: 300px;
+    width: 270px;
+    margin-right: 30px;
+}
+
+.productInfoContainer{
+    width: 100vw;
+    word-break: break-word;
+}
+
+#mainImageContainer{
+    width: 270px;
+    height: 180px;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+
+#mainImage{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#mainImage:hover{
+    cursor: pointer;
+}
+
+.smallImageContainer{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.scrollerArrows{
+    position: relative;
+    top: 30%;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.scrollerArrows:active{
+    transform: scale(1.2);
+}
+
+#arrowLeftScroll{
+    margin-right: 10px;
+}
+
+#arrowRightScroll{
+    margin-left: 10px;
+}
+
+#smallImgScrollerContainer{
+    display: flex;
+    height: 90px;
+    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    align-items: center;
+}
+
+.scrollImg{
+    width: 85px;
+    padding: 0px 5px 0px 5px;
+    cursor: pointer;
+}
+
+.productDescriptionMainContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.productBtnsContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.productBtnsContainer > a > button{
+    margin-bottom: 5px;
+    min-width: 200px;
+}
+
+.productReviewComponent{
+    padding: 20px;
+}
+
+#addReviewContainer{
+    display: flex;
+    align-items: center;
+}
+
+.productRecommendation{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex: 100% 0% 0%;
+    flex-wrap: wrap;
+}
+
+.productRecommendationDivs{
+    text-align: center;
+    min-width: 235px;
+    margin: 5px 0px 20px 0px;
+}
+
+.productRecommendationDivs img{
+    height: 40px;
+}
+
+#addReviewImage{
+    display: none;
+}
+
+.addImage{
+    width: 120px;
+    cursor: pointer;
+    margin: 0px 20px 0px 20px;
+}
+
+#addReviewBtnContainer{
+    min-width: 170px;
+    text-align: center;
+}
+
+#starRatingContainer > *{
+    cursor: pointer;
+    margin: 10px 2px 0px 2px;
+    transition: 0.1s ease-in-out;
+    width: 30px;
+}
+
+.ratedStar{
+    fill: #FFCD51;
+    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.25));
+    border-radius: 1px;
+    stroke-width: 1px;
+    cursor: pointer;
+}
+
+.noCommentForYouCnt{
+    position: relative;
+}
+
+.noCommentForYou{
+    background-color: #D9D9D980;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.noCommentForYou > h2 {
+    max-width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .productDescriptionComponent{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .productImgsContainer{
+        margin: 0px;
+    }
+
+    .productDescriptionMainContainer{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .productBtnsContainer{
+        margin: 15px 0px 0px 0px;
+    }
+
+    .productRecommendation{
+        justify-content: center;
+    }
+
+    #addReviewContainer{
+        justify-content: space-between;
+    }
+
+    .addImage{
+        margin: 0;
+    }
+
+    #addReviewBtnContainer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #starRatingContainer > *{
+        margin: 0px 2px 10px 2px;
+    }
+
+}

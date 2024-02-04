@@ -1,0 +1,35 @@
+.informationCircule{
+    width: 20px;
+    height: 20px;
+    background-color: #A7D8FF;
+    border-radius: 50%;
+}
+
+.info-icon {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    font-style: italic;
+    color: white;
+  }
+
+  .info-icon:hover .info-popup {
+    display: block;
+  }
+
+  .info-popup {
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    width: 150px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: black;
+    font-style: normal;
+  }
